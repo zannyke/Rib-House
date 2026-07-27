@@ -829,3 +829,78 @@ footer {
         gap: 40px;
     }
 }
+
+/* ==========================================
+   Black and White Alternating Sections
+   ========================================== */
+
+.section-light {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.section-light .section-title {
+    color: #121212;
+}
+
+.section-light .story-content h3 {
+    color: #1a1a1a;
+}
+
+.section-light .story-content p {
+    color: #4a4a4f;
+}
+
+.section-light .chef-name {
+    color: var(--accent-gold);
+}
+
+.section-light .chef-title {
+    color: #8e8e93;
+}
+
+.section-light .btn-secondary {
+    border-color: #cccccc;
+    color: #121212;
+}
+
+.section-light .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: #121212;
+}
+
+/* Reservation Specific Light Themes */
+.section-light .reservation-container {
+    background: #f9f9fb;
+    border-color: #e1e1e6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-light .reservation-form-wrapper h3 {
+    color: #121212;
+}
+
+.section-light .form-group label {
+    color: #55555a;
+}
+
+.section-light .form-group input,
+.section-light .form-group select,
+.section-light .form-group textarea {
+    background: #ffffff;
+    border-color: #e1e1e6;
+    color: #121212;
+}
+
+.section-light .form-group input:focus,
+.section-light .form-group select:focus,
+.section-light .form-group textarea:focus {
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 10px rgba(207, 168, 96, 0.15);
+}
+
+.section-dark {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
