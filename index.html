@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rib House | Premium Steak & Smoked Ribs</title>
+    <meta name="description" content="Experience the finest wood-fired steaks, slow-smoked ribs, and handcrafted cocktails at Rib House. Book your table today for a premium culinary journey.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-main">Rib House</span>
+                <span class="logo-sub">Steak & Smoke</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+
+            <a href="#reservation" class="btn-reserve-nav">Book Table</a>
+
+            <div class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-subtitle">Wood-Fired & Slow-Smoked</span>
+            <h1>Crafting the Ultimate BBQ Experience</h1>
+            <p class="hero-desc">Indulge in premium quality cuts, hickory-smoked meats, and legendary secret rubs perfected over generations.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn-primary">Explore Menu</a>
+                <a href="#reservation" class="btn-secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story/About Section -->
+    <section id="story">
+        <div class="section-container">
+            <div class="story-grid">
+                <div class="story-content">
+                    <span class="section-tag">Since 1994</span>
+                    <h2 class="section-title">The Art of Smoke</h2>
+                    <br>
+                    <h3>Where passion meets fire.</h3>
+                    <p>At Rib House, we believe that great barbecue is a test of patience. Our signature ribs are dry-rubbed with a proprietary blend of 14 spices, then slow-smoked for up to 12 hours over select hickory and cherry wood logs.</p>
+                    <p>Every steak is hand-selected, USDA Prime, aged for 28 days, and finished on our custom wood-fired grill at 800 degrees to lock in the intense natural flavor and juices.</p>
+                    <div class="story-signature">
+                        <p class="chef-name">Marcus Vance</p>
+                        <p class="chef-title">Pitmaster & Founder</p>
+                    </div>
+                </div>
+                <div class="story-images">
+                    <div class="story-img-wrapper" style="grid-row: span 2;">
+                        <img src="hero_ribs.jpg" alt="Chef preparing smoked ribs">
+                    </div>
+                    <div class="story-img-wrapper">
+                        <img src="tomahawk.jpg" alt="Steak on grill">
+                    </div>
+                    <div class="story-img-wrapper">
+                        <img src="old_fashioned.jpg" alt="Old fashioned cocktail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Culinary Masterpieces</span>
+                <h2 class="section-title">On The Menu</h2>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="ribs">Signature Ribs</button>
+                <button class="filter-btn" data-filter="steaks">Steaks</button>
+                <button class="filter-btn" data-filter="sides">Gourmet Sides</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item" data-category="ribs">
+                    <div class="menu-item-img">
+                        <img src="hero_ribs.jpg" alt="Signature Smoked Ribs">
+                    </div>
+                    <div class="menu-item-info">
+                        <div>
+                            <div class="menu-item-title-price">
+                                <h4>Signature Smoked Ribs</h4>
+                                <span class="menu-item-price">$34</span>
+                            </div>
+                            <p class="menu-item-desc">Hickory slow-smoked baby back ribs, glazed with our house honey bourbon BBQ sauce. Served with cornbread.</p>
+                        </div>
+                        <div class="menu-item-tags">
+                            <span class="tag">Smoked</span>
+                            <span class="tag">Award Winner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item" data-category="steaks">
+                    <div class="menu-item-img">
+                        <img src="tomahawk.jpg" alt="Prime Tomahawk Steak">
+                    </div>
+                    <div class="menu-item-info">
+                        <div>
+                            <div class="menu-item-title-price">
+                                <h4>Dry-Aged Tomahawk</h4>
+                                <span class="menu-item-price">$89</span>
+                            </div>
+                            <p class="menu-item-desc">32oz USDA Prime Tomahawk steak, wood-fired, finished with roasted garlic herb butter and flaky sea salt.</p>
+                        </div>
+                        <div class="menu-item-tags">
+                            <span class="tag">Wood-Fired</span>
+                            <span class="tag">USDA Prime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item" data-category="sides">
+                    <div class="menu-item-img">
+                        <img src="mac_cheese.jpg" alt="Truffle Mac & Cheese">
+                    </div>
+                    <div class="menu-item-info">
+                        <div>
+                            <div class="menu-item-title-price">
+                                <h4>Truffle Mac & Cheese</h4>
+                                <span class="menu-item-price">$14</span>
+                            </div>
+                            <p class="menu-item-desc">Cast-iron baked campanelle pasta, three-cheese blend, white truffle oil, toasted herb panko crust.</p>
+                        </div>
+                        <div class="menu-item-tags">
+                            <span class="tag">Vegetarian</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="old_fashioned.jpg" alt="Smoked Old Fashioned">
+                    </div>
+                    <div class="menu-item-info">
+                        <div>
+                            <div class="menu-item-title-price">
+                                <h4>Smoked Old Fashioned</h4>
+                                <span class="menu-item-price">$16</span>
+                            </div>
+                            <p class="menu-item-desc">Kentucky straight bourbon, Angostura bitters, maple syrup, smoked tableside under glass with hickory chips.</p>
+                        </div>
+                        <div class="menu-item-tags">
+                            <span class="tag">Signature Cocktail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <div class="section-container">
+            <div class="reservation-container">
+                <div class="reservation-info">
+                    <div>
+                        <span class="section-tag" style="color: var(--accent-gold);">Reservations</span>
+                        <h2 style="font-size: 2.2rem; color: #fff;">Join Us Tonight</h2>
+                        <p style="color: var(--text-secondary); margin-top: 15px; font-weight: 300;">We recommend booking tables up to two weeks in advance. Walk-ins are accommodated based on availability.</p>
+                    </div>
+                    
+                    <div class="reservation-info-details">
+                        <div class="info-item">
+                            <h4>Location</h4>
+                            <p>124 Smokehouse Lane, Texas, USA</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Hours</h4>
+                            <p>Tue - Sun: 5:00 PM - 11:00 PM</p>
+                            <p>Monday: Closed</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Direct Line</h4>
+                            <p>+1 (555) 890-RIBS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reservation-form-wrapper">
+                    <h3>Secure Your Table</h3>
+                    <form id="reservation-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="res-name">Full Name</label>
+                                <input type="text" id="res-name" required placeholder="e.g. John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="res-email">Email Address</label>
+                                <input type="email" id="res-email" required placeholder="e.g. john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="res-phone">Phone Number</label>
+                                <input type="tel" id="res-phone" required placeholder="e.g. (555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="res-guests">Number of Guests</label>
+                                <select id="res-guests" required>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7">7+ People</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-date">Date</label>
+                                <input type="date" id="res-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-time">Time</label>
+                                <select id="res-time" required>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                    <option value="10:00 PM">10:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="res-notes">Special Requests</label>
+                                <textarea id="res-notes" placeholder="Dietary restrictions, anniversary, seating preference..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Find a Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-main">Rib House</span>
+                    <span class="logo-sub">Steak & Smoke</span>
+                </a>
+                <p>An upscale smokehouse serving legendary cuts, wood-fired delicacies, and handcrafted spirits since 1994.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>Opening Hours</h4>
+                <div class="hours-grid">
+                    <span>Tue - Thu:</span>
+                    <span>5:00 PM - 10:00 PM</span>
+                    <span>Fri - Sat:</span>
+                    <span>5:00 PM - 11:00 PM</span>
+                    <span>Sunday:</span>
+                    <span>4:00 PM - 9:00 PM</span>
+                    <span>Monday:</span>
+                    <span>Closed</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rib House Restaurant. All rights reserved.</p>
+            <p>Designed with passion for fire & food.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3>Reservation Confirmed!</h3>
+            <p id="modal-details">Your table is successfully booked.</p>
+            <button class="btn-primary" id="close-modal">Perfect</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
