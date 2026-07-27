@@ -34,15 +34,28 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="hero-subtitle">Wood-Fired & Slow-Smoked</span>
-            <h1>Crafting the Ultimate BBQ Experience</h1>
-            <p class="hero-desc">Indulge in premium quality cuts, hickory-smoked meats, and legendary secret rubs perfected over generations.</p>
-            <div class="hero-actions">
-                <a href="#menu" class="btn-primary">Explore Menu</a>
-                <a href="#reservation" class="btn-secondary">Book a Table</a>
+    <!-- Hero Section (Light Asymmetric Redesign) -->
+    <section class="hero-light" id="home">
+        <div class="hero-light-container">
+            <div class="hero-light-content">
+                <span class="hero-subtitle ani-1">Wood-Fired & Slow-Smoked</span>
+                <h1 class="ani-2">Crafting the Ultimate BBQ Experience</h1>
+                <p class="hero-desc ani-3">Indulge in premium quality cuts, hickory-smoked meats, and legendary secret rubs perfected over generations by our family pitmasters.</p>
+                <div class="hero-actions ani-4">
+                    <a href="#menu" class="btn-primary">
+                        <span>Explore Menu</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#reservation" class="btn-secondary">
+                        <span>Book a Table</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-light-image ani-2">
+                <div class="hero-img-frame">
+                    <img src="hero_ribs.jpg" alt="Premium glazed smoked ribs on a platter">
+                </div>
             </div>
         </div>
     </section>
@@ -217,17 +230,26 @@
                     
                     <div class="reservation-info-details">
                         <div class="info-item">
-                            <h4>Location</h4>
-                            <p>124 Smokehouse Lane, Texas, USA</p>
+                            <h4>
+                                <svg class="info-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; margin-top: -2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Location</span>
+                            </h4>
+                            <p style="padding-left: 20px;">124 Smokehouse Lane, Texas, USA</p>
                         </div>
                         <div class="info-item">
-                            <h4>Hours</h4>
-                            <p>Tue - Sun: 5:00 PM - 11:00 PM</p>
-                            <p>Monday: Closed</p>
+                            <h4>
+                                <svg class="info-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; margin-top: -2px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Hours</span>
+                            </h4>
+                            <p style="padding-left: 20px;">Tue - Sun: 5:00 PM - 11:00 PM</p>
+                            <p style="padding-left: 20px; color: var(--text-muted);">Monday: Closed</p>
                         </div>
                         <div class="info-item">
-                            <h4>Direct Line</h4>
-                            <p>+1 (555) 890-RIBS</p>
+                            <h4>
+                                <svg class="info-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; margin-top: -2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>Direct Line</span>
+                            </h4>
+                            <p style="padding-left: 20px;">+1 (555) 890-RIBS</p>
                         </div>
                     </div>
                 </div>
@@ -279,7 +301,10 @@
                                 <textarea id="res-notes" placeholder="Dietary restrictions, anniversary, seating preference..."></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn-primary" style="width: 100%;">Find a Table</button>
+                        <button type="submit" class="btn-primary" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 10px;">
+                            <span>Confirm Reservation</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
                     </form>
                 </div>
             </div>
