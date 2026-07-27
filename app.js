@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navigation Scroll Effect
+    // Navigation Scroll Effect with Directional Hide/Show
     const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
+
+        // Hide on scroll down, show on scroll up
+        if (window.scrollY > lastScrollY && window.scrollY > 150) {
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.transform = 'translateY(0)';
+        }
+        lastScrollY = window.scrollY;
     });
+
 
     // Mobile Navigation Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');

@@ -148,7 +148,21 @@ header.scrolled .logo-main {
     color: #55555d;
     position: relative;
     padding: 8px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     transition: var(--transition-smooth);
+}
+
+.nav-icon {
+    width: 14px;
+    height: 14px;
+    stroke-width: 2px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-links a:hover .nav-icon {
+    transform: translateY(-1px);
 }
 
 header.scrolled .nav-links a {
@@ -228,27 +242,22 @@ header.scrolled .menu-toggle span {
     background-color: var(--text-primary);
 }
 
-/* Hero Section (Light Asymmetric Redesign) */
-.hero-light {
-    background-color: #ffffff;
-    padding: 160px 20px 100px;
-    min-height: 100vh;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.94)), url('hero_ribs.jpg') no-repeat center center/cover;
 }
 
-.hero-light-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 80px;
-    align-items: center;
-    width: 100%;
-}
-
-.hero-light-content {
-    text-align: left;
+.hero-content {
+    max-width: 800px;
+    text-align: center;
 }
 
 .hero-subtitle {
@@ -261,8 +270,8 @@ header.scrolled .menu-toggle span {
     display: inline-block;
 }
 
-.hero-light-content h1 {
-    font-size: clamp(2.5rem, 6vw, 4.4rem);
+.hero h1 {
+    font-size: clamp(2.5rem, 7vw, 4.8rem);
     line-height: 1.05;
     margin-bottom: 25px;
     color: #0c0c0e;
@@ -270,17 +279,17 @@ header.scrolled .menu-toggle span {
 }
 
 .hero-desc {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: #4f4f56;
     max-width: 580px;
-    margin: 0 0 40px 0;
+    margin: 0 auto 40px;
     font-weight: 300;
     line-height: 1.7;
 }
 
 .hero-actions {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -341,49 +350,6 @@ header.scrolled .menu-toggle span {
 
 .btn-secondary:hover .btn-icon {
     transform: translateY(-1px);
-}
-
-.hero-light-image {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.hero-img-frame {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
-    width: 100%;
-    aspect-ratio: 4/5;
-}
-
-.hero-img-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-smooth);
-}
-
-.hero-img-frame::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: -20px;
-    right: 20px;
-    bottom: -20px;
-    border: 2px solid var(--accent-gold);
-    border-radius: 20px;
-    z-index: -1;
-    transition: var(--transition-smooth);
-}
-
-.hero-light-image:hover .hero-img-frame img {
-    transform: scale(1.03);
-}
-
-.hero-light-image:hover .hero-img-frame::after {
-    transform: translate(8px, -8px);
 }
 
 /* Staggered Animations */
